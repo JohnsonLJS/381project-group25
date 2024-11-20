@@ -1,6 +1,5 @@
 const http = require('http');
 const url = require('url');
-const PORT = process.env.PORT || 3000;
 const uri = 'mongodb+srv://s1383991:12345@cluster0.sxzpi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const mongoose = require('mongoose');
 const User = require('./models/User'); 
