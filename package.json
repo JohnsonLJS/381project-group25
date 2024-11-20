@@ -10,5 +10,5 @@
     "engine": "node >= 20.0.0",
     "scripts": {
         "start": "node server"
-    }
+    }
 }
