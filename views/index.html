@@ -3,19 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Project</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>Main Page</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column; 
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            flex: 0 0 15%;
+            position: relative;
+            }
+
+        header .logout-btn {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                padding: 10px 20px;
+                background-color: #f44336;
+                color: white;
+                border: none;
+                cursor: pointer;
+                text-decoration: none; 
+                display: inline-block; 
+                font-size: 16px;
+                text-align: center;
+                border-radius: 5px;
+        }
+
+        header .logout-btn:hover {
+                background-color: #d32f2f;
+        }
+
+        header .logo-img {
+            position: absolute;
+            bottom: 10px; 
+            left: 10px;   
+            height: 25px; 
+            width: auto;  
+        }        
+        /* Main Body Container Styles */
+        .main-body {
+            display: flex;
+            flex: 1; 
+            height: 85%; 
+        }
+
+        .left, .right {
+            width: 30%;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .middle {
+            width: 40%;
+            padding: 20px;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+            th {
+            text-align: right; 
+            padding: 10px;     
+        }
+
+        .dot-list {
+            list-style-type: disc;  
+            margin: 0;             
+            padding-left: 20px;     
+        }
+
+        .dot-list li {
+            margin-bottom: 5px;
+        }
+
+        /* Add border between the sections */
+        .left {
+            border-right: 1px solid black; 
+        }
+
+        .middle {
+            border-right: 1px solid black; 
+        }
+
+        /* Left and Right Section Links */
+        .section-links a {
+            display: block;
+            margin: 10px 0;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .section-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Right Section - Right Align Links */
+        .right {
+            width: 30%;
+            padding: 20px;
+            overflow-y: auto;
+            text-align: right; 
+        }
+
+        /* Middle Section Browse Button */
+        .browse-btn-container {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .browse-btn-container input[type="file"] {
+            display: none;
+        }
+
+        .browse-btn-container label {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .browse-btn-container label:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to our Project</h1>
-            <nav>
-                <a href="/login">LOGIN</a>
-                <a href="/register">REGISTER</a>
-            </nav>
-        </header>
-    </div>
-    <script src="/scripts.js"></script>
-</body>
-</html>
+
+    <!-- Header Section -->
+<header>
+    <h1>Welcome Server Side</h1>
+    <a href="https://www.hkmu.edu.hk/tc/" target="_blank">
+        <img src="MUHK.jpeg" alt="MU" class="logo-img" />
+    </a>
+    <a href="/" class="logout-btn">Logout</a>
+</header>
+
+    <!-- Main Body Container -->
+    <div class="main-body">
+        <!-- Left Section -->
+        <div class="left">
+            <div class="section-links">
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 1</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 2</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 3</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 4</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 5</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 6</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 7</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 8</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 9</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 10</a>
+            </div>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="middle">
+            <table>
+                <tr>
+                    <th>
+                        <li>Course Info</li>
+                    </th>
+                    <th>
+                        <li>Course Name: </li>
+                        <ul class="dot-list">
+                            <li>Server-side Technologies and Cloud Computing</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <li>Course Aim: </li>
+                        <ul class="dot-list">
+                            <li>Learn key technologies in server-side apps</li>
+                            <li>Learn key concepts in cloud computing</li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul class="dot-list">
+                            <li>Course Info</li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+            
+            <!-- Browse Button -->
+            <div class="browse-btn-container">
+                <label for="file-upload">Browse...</label>
+                <input type="file" id="file-upload">
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right">
+            <div class="section-links">
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 1</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 2</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 3</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 4</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 5</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 6</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 7</a>
+                <a href="https://oletool.hkmu.edu.hk/course2404/comps381f.nsf/0/02CB39DBCEC6C38848258BD9002AFF4F/$FILE/Lab10.pdf" target="_blank">Link 8</a>
