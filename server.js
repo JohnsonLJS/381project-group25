@@ -9,15 +9,15 @@ const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public')); 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+    res.sendFile(path.join(__dirname, 'views', 'info.html'));
 });
 
 app.get('/login', (req, res) => {
@@ -29,17 +29,12 @@ app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'register.html'));
 });
 
-app.get('/meaning', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'meaning.html'));
+app.get('/index', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 app.get('/logout', (req, res) => {
-    req.session.destroy((err) => {
-        if (err) {
-            return res.status(500).send('Failed to logout');
-        }
-        res.redirect('/login');
-    });
+    res.sendFile(path.join(__dirname, 'views', 'login.html'));
 });
 
 // user register
@@ -60,9 +55,11 @@ app.post('/login', async (req, res) => {
     const { username, password } = req.body;
     const user = await User.findOne({ username, password });
     if (user) {
-        res.redirect('/meaning');
+        console.log('Login successful for user:', username);
+        res.redirect('/index');  
     } else {
-        res.redirect('/login');
+        console.log('Login failed for user:', username);
+        res.redirect('/login?error=true'); 
     }
 });
 
