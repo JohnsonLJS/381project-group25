@@ -9,9 +9,9 @@ const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public')); 
@@ -34,7 +34,12 @@ app.get('/meaning', (req, res) => {
 });
 
 app.get('/logout', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'login.html'));
+    req.session.destroy((err) => {
+        if (err) {
+            return res.status(500).send('Failed to logout');
+        }
+        res.redirect('/login');
+    });
 });
 
 // user register
