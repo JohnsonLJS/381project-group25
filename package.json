@@ -4,7 +4,7 @@
     "author": "Raymond SO <rso@ouhk.edu.hk>",
     "version": "0.0.1",
     "license": "MIT",
-    "private": true
+    "private": true,
     "dependencies": {
         "express": "^4.21.1",
         "mongoose": "^8.8.1",
