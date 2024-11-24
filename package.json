@@ -6,6 +6,7 @@
     "dependencies": {
         "express": "^4.21.1",
         "mongoose": "^8.8.1"
+        "license": "MIT"
     },
     "engine": "node >= 20.0.0",
     "scripts": {
