@@ -6,11 +6,11 @@
     "dependencies": {
         "express": "^4.21.1",
         "mongoose": "^8.8.1",
-        "license": "ISC",
-        "private": true
     },
     "engine": "node >= 20.0.0",
     "scripts": {
         "start": "node server"
-    }
+    },
+     "license": "MIT",
+        "private": true
 }
