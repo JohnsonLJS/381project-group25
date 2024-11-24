@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group25 Project</title>
     <link rel="stylesheet" href="/styles.css">
+    <style> 
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            background-image: url('image1.jpeg'); 
+            background-size: cover; 
+            background-position: center center; 
+            background-repeat: no-repeat; 
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Welcome to our Project</h1>
-            <nav>
-                <a href="/login">LOGIN</a>
-                <a href="/register">REGISTER</a>
-            </nav>
+            <div class="button-container">
+                <a href="/login">Login</a>
+            </div>
+       	    <div class="button-container">
+                <a href="/register">Register</a>
+            </div>
         </header>
     </div>
     <script src="/scripts.js"></script>
