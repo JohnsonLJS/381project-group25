@@ -125,7 +125,7 @@ async function main() {
 
         // Start the Express server
         app.listen(PORT, () => {
-            console.log(Server created: http://localhost:${PORT}/);
+            console.log(`Server created: http://localhost:${PORT}/`);
         });
     } catch (err) {
         console.log('Error occurred:', err);
@@ -133,4 +133,4 @@ async function main() {
 }
 
 main()
-  .finally()
+  .finally()
