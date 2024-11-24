@@ -3,13 +3,12 @@
     "description": "ODM App",
     "author": "Raymond SO <rso@ouhk.edu.hk>",
     "version": "0.0.1",
-    "license": "MIT",
     "dependencies": {
         "express": "^4.21.1",
-        "mongoose": "^8.8.1"
+        "mongoose": "^8.4.3"
     },
     "engine": "node >= 20.0.0",
     "scripts": {
-        "start": "node server"
+        "start": "node server"
     }
 }
