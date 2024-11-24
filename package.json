@@ -10,7 +10,7 @@
     },
     "engine": "node >= 20.0.0",
     "scripts": {
-        "start": "node server"
+        "start": "node server",
         "build": "babel src -d lib",
         "test": "jest"
     }
