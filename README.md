@@ -6,12 +6,14 @@ Using HTML, CSS, JAVA
 [This is our link](https://three81project-group24.onrender.com)
 
 # Collaborators
-
 13839918 Yeung Kit
 
-12948744
+12948744 Hui Ka Hei Jason
 
-13513586 Li JunSheng
+13513586 Li Jun Sheng Johnson
+
+# Set up 
+
 
  
 	
