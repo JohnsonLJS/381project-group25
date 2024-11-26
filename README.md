@@ -1,5 +1,5 @@
 # Some Information
-This is the project assignment for the Server-side Technologies And Cloud Computing ( COMP S381F ) and Bachelor of Science with Honours in Cyber and Computer Security ( JS9719 )
+This is the project assignment for the Server-side Technologies And Cloud Computing ( COMP S381F ) 
 
 Using HTML, CSS, JAVASCRIPT
 
