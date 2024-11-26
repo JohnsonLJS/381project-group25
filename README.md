@@ -1,5 +1,5 @@
 # Some Information
-This is the project assignment for the Server-side Technologies And Cloud Computing ( COMP S381F ) 
+This is a project assignment for the Server-side Technologies And Cloud Computing ( COMP S381F ) 
 
 Using HTML, CSS, JAVASCRIPT
 
