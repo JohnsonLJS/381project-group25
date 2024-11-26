@@ -18,8 +18,8 @@ Using HTML, CSS, JAVASCRIPT
    The project file likes
 	├── README.md
 	├── models
-	│   └── User.js
- 	│   └── Note.js	
+	│   └── Note.js
+ 	│   └── User.js	
 	├── public
 	│   ├── MUHK.jpeg
 	│   ├── image1.jpeg
@@ -27,12 +27,11 @@ Using HTML, CSS, JAVASCRIPT
 	│   ├── image3.jpeg
 	│   └── styles.css
 	├──	views
- 	├── index.html
+ 	│	├── index.html
    	│ 	├── info.html
    	│ 	├── login.html
-	│	├── register.html
-	│	└── 
-	├── package-lock.json
+	│	├── note.html
+	│	└── register.html
 	├── package.json
 	└── server.js
     ```
