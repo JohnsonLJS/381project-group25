@@ -19,13 +19,15 @@ Using HTML, CSS, JAVASCRIPT
 	├── README.md
 	├── models
 	│   └── User.js
+ 	│   └── Note.js	
 	├── public
 	│   ├── MUHK.jpeg
 	│   ├── image1.jpeg
 	│   ├── image2.jpeg
+	│   ├── image3.jpeg
 	│   └── styles.css
 	├──	views
-    │	├── index.html
+ 	├── index.html
    	│ 	├── info.html
    	│ 	├── login.html
 	│	├── register.html
