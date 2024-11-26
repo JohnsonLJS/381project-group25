@@ -69,6 +69,7 @@ Using HTML, CSS, JAVASCRIPT
 #  RESTful CRUD services 
 There are 2 RESTful CRUD services, the first one is user and the second is note. You can use the API to read, create, upload and delete.
 UserAPI:
+
 READ:
 curl "localhost:3000/api/users"
 
@@ -82,6 +83,7 @@ DELETE:
 curl -X DELETE "localhost:3000/api/users/username/password"
 
 NoteAPI:
+
 READ:
 curl "localhost:3000/api/notes"
 
