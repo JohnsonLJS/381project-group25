@@ -18,20 +18,21 @@ Using HTML, CSS, JAVASCRIPT
    The project file likes
 	├── README.md
 	├── models
-	│   └── Note.js
- 	│   └── User.js	
+ 	│   ├── Note.js
+	│   └── User.js
 	├── public
 	│   ├── MUHK.jpeg
 	│   ├── image1.jpeg
 	│   ├── image2.jpeg
-	│   ├── image3.jpeg
+ 	│   ├── image3.jpeg
 	│   └── styles.css
 	├──	views
- 	│	├── index.html
+    	│	├── index.html
    	│ 	├── info.html
    	│ 	├── login.html
-	│	├── note.html
+	│	├── note.html 
 	│	└── register.html
+	├── package-lock.json
 	├── package.json
 	└── server.js
     ```
