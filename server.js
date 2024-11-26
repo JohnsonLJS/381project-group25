@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 const uri = 'mongodb+srv://s1383991:12345@cluster0.sxzpi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const mongoose = require('mongoose');
 const User = require('./models/User'); 
+const Note = require('./models/Note');
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -35,6 +36,10 @@ app.get('/index', (req, res) => {
 
 app.get('/logout', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'login.html'));
+});
+
+app.get('/note', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'note.html'));
 });
 
 // user register
@@ -111,6 +116,59 @@ app.delete('/api/users/:username/:password', async (req, res) => {
             res.status(200).json({ message: 'User deleted successfully' });
         } else {
             res.status(404).json({ error: 'User not found' });
+        }
+    } catch (error) {
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+// RESTful services: READ ~ GET
+app.get('/api/notes', async (req, res) => {
+    const notes = await Note.find();
+    res.status(200).json(notes);
+});
+
+// RESTful services: CREATE ~ POST
+app.post('/api/notes', async (req, res) => {
+    const { title, content } = req.body;
+    const newNote = new Note({ title, content });
+    try {
+        await newNote.save();
+        res.status(201).json(newNote);
+    } catch (error) {
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+// RESTful services: UPDATE ~ PUT
+app.put('/api/notes/:id', async (req, res) => {
+    const { id } = req.params;
+    const { title, content } = req.body;
+    try {
+        const updatedNote = await Note.findByIdAndUpdate(
+            id,
+            { title, content },
+            { new: true }
+        );
+        if (updatedNote) {
+            res.status(200).json(updatedNote);
+        } else {
+            res.status(404).json({ error: 'Note not found' });
+        }
+    } catch (error) {
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+// RESTful services: DELETE ~ DELETE
+app.delete('/api/notes/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const deletedNote = await Note.findByIdAndDelete(id);
+        if (deletedNote) {
+            res.status(200).json({ message: 'Note deleted successfully' });
+        } else {
+            res.status(404).json({ error: 'Note not found' });
         }
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
