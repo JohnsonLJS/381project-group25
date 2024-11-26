@@ -78,7 +78,7 @@ CREATE:
 curl -X POST -d 'username=xxxx&password=XXXX' "localhost:3000/api/users"
 
 UPDATE:
-curl -X PUT -d'newUsername=xxxx&newPassword=XXXX' "localhost:3000/api/user/username/password"
+curl -X PUT -d 'newUsername=xxxx&newPassword=XXXX' "localhost:3000/api/user/username/password"
 
 DELETE:
 curl -X DELETE "localhost:3000/api/users/username/password"
@@ -92,7 +92,7 @@ CREATE:
 curl -X POST -d 'title=xxxx&content=XXXX' "localhost:3000/api/notes"
 
 UPDATE:
-curl -X PUT -d'title=xxxx&content=XXXX' "localhost:3000/api/notes/id"
+curl -X PUT -d 'title=xxxx&content=XXXX' "localhost:3000/api/notes/id"
 
 DELETE:
 curl -X DELETE "localhost:3000/api/notes/id"
