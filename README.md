@@ -53,7 +53,7 @@ Using HTML, CSS, JAVASCRIPT
 
  4. login in the index page, each link can click, the "MU" image and the logout, note button can cilck too.
 
- 5. "MU" image link to the MU website, logout button can logout and go to the cover page, the note page will go to the note page
+ 5. "MU" image link to the MU website, logout button can logout and go to the cover page, the note page will go to the button page
 
  6. 
    
