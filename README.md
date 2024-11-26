@@ -55,8 +55,17 @@ Using HTML, CSS, JAVASCRIPT
  4. login in the index page, each link can click, the "MU" image and the logout, note button can cilck too.
 
  5. "MU" image link to the MU website, logout button can logout and go to the cover page, the note page will go to the button page
-
- 6. 
+ 
+ 6. For note page, you can see all the note and manage them.
+ 
+ 7. Enter the "Title" and "Content" then you can create a new note.
+ 
+ 8. Click the "Edit" button can see the "Note ID", "Title" and "Content", you can change the detail and update them.
+ 
+ 9. Click the "Delete" button can delete the note.
+ 
+ 10. Click the "Back to main page" can go back to the index page.
+     
    
  
 	
