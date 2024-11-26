@@ -1,5 +1,5 @@
 # Some Information
-This is the project assignment for the Server-side Technologies And Cloud Computing ( COMP S381F and ) 
+This is the project assignment for the Server-side Technologies And Cloud Computing ( COMP S381F ) and Bachelor of Science with Honours in Cyber and Computer Security ( JS9719 )
 
 Using HTML, CSS, JAVA
 
@@ -7,7 +7,7 @@ Using HTML, CSS, JAVA
 
 # Collaborators
 
-13839918
+13839918 Yeung Kit
 
 12948744
 
