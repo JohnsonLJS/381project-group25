@@ -13,7 +13,7 @@ Using HTML, CSS, JAVA
 13513586 Li Jun Sheng Johnson
 
 # Set up 
-
+1. Download all the code from our [Github Project](https://github.com/JohnsonLJS/381project_group24)
 
  
 	
