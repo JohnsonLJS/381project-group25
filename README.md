@@ -78,7 +78,7 @@ CREATE:
 curl -X POST -d 'username=xxxx&password=XXXX' "localhost:3000/api/users"
 
 UPDATE:
-curl -X PUT -d 'newUsername=xxxx&newPassword=XXXX' "localhost:3000/api/user/username/password"
+curl -X PUT -d 'newUsername=xxxx&newPassword=XXXX' "localhost:3000/api/users/username/password"
 
 DELETE:
 curl -X DELETE "localhost:3000/api/users/username/password"
