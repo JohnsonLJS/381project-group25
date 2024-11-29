@@ -1,3 +1,6 @@
+# Topic
+Our project's topic is STUDENTs TAKE NOTES SYSTEM
+
 # Some Information
 This is a project assignment for the Server-side Technologies And Cloud Computing ( COMP S381F ) 
 
