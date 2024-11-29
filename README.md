@@ -72,30 +72,30 @@ There are 2 RESTful CRUD services, the first one is user and the second is note.
 UserAPI:
 
 READ:
-curl "localhost:3000/api/users"
+curl "https://three81project-group24.onrender.com/api/users"
 
 CREATE:
-curl -X POST -d 'username=xxxx&password=XXXX' "localhost:3000/api/users"
+curl -X POST -d 'username=xxxx&password=XXXX' "https://three81project-group24.onrender.com/api/users"
 
 UPDATE:
-curl -X PUT -d 'newUsername=xxxx&newPassword=XXXX' "localhost:3000/api/users/username/password"
+curl -X PUT -d 'newUsername=xxxx&newPassword=XXXX' "https://three81project-group24.onrender.com/api/users/username/password"
 
 DELETE:
-curl -X DELETE "localhost:3000/api/users/username/password"
+curl -X DELETE "https://three81project-group24.onrender.com/api/users/username/password"
 
 NoteAPI:
 
 READ:
-curl "localhost:3000/api/notes"
+curl "https://three81project-group24.onrender.com/api/notes"
 
 CREATE:
-curl -X POST -d 'title=xxxx&content=XXXX' "localhost:3000/api/notes"
+curl -X POST -d 'title=xxxx&content=XXXX' "https://three81project-group24.onrender.com/api/notes"
 
 UPDATE:
-curl -X PUT -d 'title=xxxx&content=XXXX' "localhost:3000/api/notes/id"
+curl -X PUT -d 'title=xxxx&content=XXXX' "https://three81project-group24.onrender.com/api/notes/id"
 
 DELETE:
-curl -X DELETE "localhost:3000/api/notes/id"
+curl -X DELETE "https://three81project-group24.onrender.com/api/notes/id"
  
      
    
